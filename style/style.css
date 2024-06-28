@@ -1,0 +1,14 @@
+.font-monsterrat{
+    font-family: "Montserrat", sans-serif;
+}
+.hero span {
+    text-shadow:0 0 15px rgb(255, 255, 255);
+        }
+        #my-image{
+           max-height: 500px;
+            width: 500px;
+        }
+        .portfolio{
+            text-shadow: 2px 2px 0 #4504b7;;
+        }
+       
