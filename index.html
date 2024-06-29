@@ -30,7 +30,7 @@
                   <li><a>contact</a></li>
                 </ul>
               </div>
-              <a class="portfolio text-2xl font-monsterrat font-semibold text-white ">PORTFOLIO</a>
+              <a class="portfolio text-2xl font-monsterrat font-semibold text-white">PORTFOLIO</a>
             </div>
             <div class="navbar-center hidden lg:flex text-white">
               <ul class=" pl-11 menu menu-horizontal px-3 text-lg ">
@@ -67,32 +67,35 @@
     </section>
     <!-- about me -->
     <section class="about-me bg-indigo-900">
-        <h1 class="text-5xl font-bold text-white text-center py-20 font-monsterrat translate-y-2.5">About me</h1>
-        <h6 class="text-white px-48 py-4 text-center font-monsterrat">I  craft  user-centered  websites  using  code  (HTML,  CSS,  JS)  and  design  principles  (UI / UX). I'm  passionate  about  solving  problems </h6> <h6 class="text-white px-48 pb-10 text-center font-monsterrat" >and  building  beautiful ,  intuitive  experiences.  Let's  connect!
+        <h1 class="text-5xl font-bold text-white text-center lg:py-20 font-monsterrat translate-y-2.5">About me</h1>
+        <h6 class="text-white lg:px-48 px-2 lg:py-4 pt-6 text-center font-monsterrat">I  craft  user-centered  websites  using  code  (HTML,  CSS,  JS)  and  design  principles  (UI / UX). I'm  passionate  about  solving  problems </h6> <h6 class="text-white lg:px-48 px-2 pb-10 text-center font-monsterrat" >and  building  beautiful ,  intuitive  experiences.  Let's  connect!
         </h6>
 
     </section>
     <!-- services -->
     <section class="services  bg-indigo-900 ">
-      <h1 class=" py-20  text-5xl font-bold text-white text-center  font-monsterrat translate-y-2.5">Services</h1>
+      <h1 class=" py-20  text-5xl font-bold text-white text-center font-monsterrat translate-y-2.5">Services</h1>
 <!-- cards section  -->
- <div class="flex py-12 justify-center">
+ <div class="lg:flex py-12  ">
   <div>
     <!-- card-1 -->
-    <div class="card bg-base-100 w-80 h-96 shadow-xl m-5">
-      <figure class="px-10 pt-10">
-        <i class="fa-solid fa-code text-5xl  text-indigo-900"></i>
-      </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title font-monsterrat text-xl text-indigo-900 font-bold">WEB DEVELOPMENT</h2>
-        <p class="font-monsterrat  text-indigo-900 font-medium p-3">I craft visually captivating & user-friendly UIs using modern design principles & development techniques.</p>
-        <div class="card-actions">
-          <button class="btn  bg-indigo-900 text-white font-monsterrat ">Read More</button>
+    <div class="sm: pl-10 lg: pl-0">
+      <div class="card bg-base-100 w-80 h-96 shadow-xl m-5 sm:ml-20">
+        <figure class="px-10 pt-10">
+          <i class="fa-solid fa-code text-5xl  text-indigo-900"></i>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title font-monsterrat text-xl text-indigo-900 font-bold">WEB DEVELOPMENT</h2>
+          <p class="font-monsterrat  text-indigo-900 font-medium p-3">I craft visually captivating & user-friendly UIs using modern design principles & development techniques.</p>
+          <div class="card-actions">
+            <button class="btn  bg-indigo-900 text-white font-monsterrat ">Read More</button>
+          </div>
         </div>
       </div>
+     </div>
     </div>
-   </div>
    <!-- card-2 -->
+   <div class="sm: pl-10 lg: pl-0">
    <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
     <figure class="px-10 pt-10">
       <i class="fa-solid fa-pen-fancy text-5xl  text-indigo-900"></i>
@@ -105,7 +108,9 @@
       </div>
     </div>
   </div>
+</div>
   <!-- card-3 -->
+  <div class="sm: pl-10 lg: pl-0">
   <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
     <figure class="px-10 pt-10">
       <i class="fa-regular fa-lightbulb text-5xl  text-indigo-900"></i>
@@ -119,6 +124,33 @@
     </div>
   </div>
  </div>
+
+    </section>
+    <!-- contact me part -->
+    <section>
+      <section class="about-me bg-indigo-900">
+        <h1 class="text-5xl font-bold text-white text-center py-20 font-monsterrat translate-y-2.5">Contact Me</h1>
+        <form class="justify-start" action="/submit-form" method="post">
+          <div class="flex gap-12 items-center justify-center">
+            <input class="m-2 p-2  w-4/12 rounded-3xl" type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
+          
+            <input class="m-2 p-2  w-4/12 rounded-3xl"  type="text" id="secondName" name="secondName" placeholder="Second Name" required><br><br>
+            
+          </div>
+          <div class="flex gap-10 items-center justify-center">
+            <input class="m-2 p-2 w-4/12 rounded-3xl" type="email" id="email" name="email" placeholder="Email ID" required><br><br>
+          
+            <input class="m-2 p-2 w-4/12 rounded-3xl" type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+            
+          </div>
+          
+          <div class="flex justify-center">
+            <textarea class="  p-2 w-9/12 rounded-3xl" id="message" name="message" rows="4" placeholder="Message" required></textarea><br>
+          </div>
+          
+          
+          <button type="submit" value="Submit">Submit</button>
+      </form>
     </section>
 
 </body>
