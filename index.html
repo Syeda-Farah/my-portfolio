@@ -59,15 +59,15 @@
               <a href="mailto:syedafarah776@gmail.com"> <i class="text-3xl px-6 fa-solid  text-white fa-envelope"></i></a>
               
              </div>
-             <a href="https://drive.google.com/file/d/1Gm5-9wFfhWtRiicoPnmoIBRGVMdhcvRS/view?usp=sharing" target="_blank" rel="noopener noreferrer" > <button class="btn bg-white text-indigo-900 items-center font-monsterrat text-xl px-6 m-3">Download CV</button></a> 
+             <a href="https://drive.google.com/file/d/1Gm5-9wFfhWtRiicoPnmoIBRGVMdhcvRS/view?usp=sharing" target="_blank" rel="noopener noreferrer" > <button class="btn bg-white text-indigo-900 font-monsterrat text-xl px-6 w-11/12 items-center rounded-3xl ">Download CV</button></a> 
                 
               </div>
             </div>
           </div>
     </section>
     <!-- about me -->
-    <section class="about-me bg-indigo-900">
-        <h1 class="text-5xl font-bold text-white text-center lg:py-20 font-monsterrat translate-y-2.5">About me</h1>
+    <section class="about-me bg-indigo-900 pt-10 ">
+        <h1 class="text-5xl font-bold text-white text-center lg:pb-20 font-monsterrat translate-y-2.5">About me</h1>
         <h6 class="text-white lg:px-48 px-2 lg:py-4 pt-6 text-center font-monsterrat">I  craft  user-centered  websites  using  code  (HTML,  CSS,  JS)  and  design  principles  (UI / UX). I'm  passionate  about  solving  problems </h6> <h6 class="text-white lg:px-48 px-2 pb-10 text-center font-monsterrat" >and  building  beautiful ,  intuitive  experiences.  Let's  connect!
         </h6>
 
@@ -79,7 +79,7 @@
  <div class="lg:flex py-12  ">
   <div>
     <!-- card-1 -->
-    <div class="sm: pl-10 lg: pl-0">
+    <div class="sm: pl-10 lg: pl-0 md:pl-36">
       <div class="card bg-base-100 w-80 h-96 shadow-xl m-5 sm:ml-20">
         <figure class="px-10 pt-10">
           <i class="fa-solid fa-code text-5xl  text-indigo-900"></i>
@@ -95,7 +95,7 @@
      </div>
     </div>
    <!-- card-2 -->
-   <div class="sm: pl-10 lg: pl-0">
+   <div class="sm: pl-10 lg:pl-0 md:pl-48">
    <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
     <figure class="px-10 pt-10">
       <i class="fa-solid fa-pen-fancy text-5xl  text-indigo-900"></i>
@@ -110,7 +110,7 @@
   </div>
 </div>
   <!-- card-3 -->
-  <div class="sm: pl-10 lg: pl-0">
+  <div class="sm: pl-10 lg:pl-0 md:pl-48">
   <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
     <figure class="px-10 pt-10">
       <i class="fa-regular fa-lightbulb text-5xl  text-indigo-900"></i>
@@ -127,29 +127,33 @@
 
     </section>
     <!-- contact me part -->
-    <section>
       <section class="about-me bg-indigo-900">
         <h1 class="text-5xl font-bold text-white text-center py-20 font-monsterrat translate-y-2.5">Contact Me</h1>
         <form class="justify-start" action="/submit-form" method="post">
-          <div class="flex gap-12 items-center justify-center">
-            <input class="m-2 p-2  w-4/12 rounded-3xl" type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
-          
-            <input class="m-2 p-2  w-4/12 rounded-3xl"  type="text" id="secondName" name="secondName" placeholder="Second Name" required><br><br>
+          <div class=" items-center mb-6">
+            <div class="lg:flex gap-10 items-center justify-center">
+              <input class="m-6 p-2 lg:w-4/12 w-9/12  ml-12 lg:ml-0 md:ml-24 rounded-3xl" type="text" id="firstName" name="firstName" placeholder="First Name" required><br><br>
             
-          </div>
-          <div class="flex gap-10 items-center justify-center">
-            <input class="m-2 p-2 w-4/12 rounded-3xl" type="email" id="email" name="email" placeholder="Email ID" required><br><br>
-          
-            <input class="m-2 p-2 w-4/12 rounded-3xl" type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+              <input class=" p-2  lg:w-4/12 w-9/12  ml-12 lg:ml-0 md:ml-24 rounded-3xl"  type="text" id="secondName" name="secondName" placeholder="Second Name" required><br><br>
+              
+            </div>
+            <div class="lg:flex gap-10 items-center justify-center">
+              <input class="m-6 p-2 lg:w-4/12 w-9/12  ml-12 lg:ml-0 md:ml-24 rounded-3xl" type="email" id="email" name="email" placeholder="Email ID" required><br><br>
             
+              <input class=" p-2 lg:w-4/12 w-9/12  ml-12 lg:ml-0 md:ml-24 rounded-3xl" type="tel" id="phone" name="phone" placeholder="Phone Number" required><br><br>
+              
+            </div>
           </div>
+          
           
           <div class="flex justify-center">
-            <textarea class="  p-2 w-9/12 rounded-3xl" id="message" name="message" rows="4" placeholder="Message" required></textarea><br>
+            <textarea class=" p-2 w-9/12 rounded-3xl" id="message" name="message" rows="4" placeholder="Message" required></textarea><br>
           </div>
+        <div class="w-11/12 flex justify-end">
+          <button class="bg-white text-indigo-900 font-bold px-6 py-3 rounded-md m-12" type="submit" value="Submit">Submit</button>
+        </div>
           
           
-          <button type="submit" value="Submit">Submit</button>
       </form>
     </section>
 
