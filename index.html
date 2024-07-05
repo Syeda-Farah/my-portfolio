@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- nav bar -->
     <section class="nav-bar m-0">
 
         <div class="navbar bg-indigo-900 lg:pl-44 pt-5">
@@ -24,8 +25,8 @@
 
 
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-indigo-900 rounded-box w-52 text-white">
-                  <li><a>home</a></li>
-                  <li><a>about</a></li>
+                  <li><a  >home</a></li>
+                  <li><a onclick="go()">about me</a></li>
                   <li><a>services</a></li>
                   <li><a>contact</a></li>
                 </ul>
@@ -34,8 +35,8 @@
             </div>
             <div class="navbar-center hidden lg:flex text-white">
               <ul class=" pl-11 menu menu-horizontal px-3 text-lg ">
-                <li><a>home</a></li>
-                <li> <a>about</a> </li>
+                <li><a >home</a></li>
+                <li> <a onclick="go()">about me</a> </li>
                 <li><a>services</a></li>
                 <li><a>contact</a></li>
             
@@ -45,7 +46,8 @@
         
 
     </section>
-    <section class="hero m-0">
+    <!-- home page section -->
+    <section id="home-page" class="hero m-0">
         <div class="hero lg:min-h-screen bg-indigo-900">
             <div class="hero-content flex-col-reverse lg:flex-row-reverse">
               <img id="my-image" src="./media/my-portfolio-img.png"  />
@@ -56,7 +58,8 @@
               <a href="https://www.facebook.com/farhat.Hridi"target="_blank" rel="noopener noreferrer"><i  class="text-3xl pr-6 fa-brands text-white fa-facebook-f"></i></a>
               <a href="https://www.linkedin.com/in/syeda-farah" target="_blank" rel="noopener noreferrer"><i class="text-3xl px-6 fa-brands  text-white fa-linkedin-in"></i></a>
               <a href="https://www.instagram.com/syedafarah776?igsh=aXBqa3pzYnVzMTNh" target="_blank" rel="noopener noreferrer"><i class="text-3xl px-6 fa-brands  text-white fa-instagram"></i> </a>
-              <a href="mailto:syedafarah776@gmail.com"> <i class="text-3xl px-6 fa-solid  text-white fa-envelope"></i></a>
+              <a href="mailto:syedafarah776@gmail.com" > <i class="text-3xl px-6 fa-solid  text-white fa-envelope"></i></a>
+              <a href="https://github.com/Syeda-Farah" target="_blank" rel="noopener noreferrer"> <i class="text-3xl px-6 fa-brands text-white fa-github"></i></a>
               
              </div>
              <a href="https://drive.google.com/file/d/1Gm5-9wFfhWtRiicoPnmoIBRGVMdhcvRS/view?usp=sharing" target="_blank" rel="noopener noreferrer" > <button class="btn bg-white text-indigo-900 font-monsterrat text-xl px-6 w-11/12 items-center rounded-3xl ">Download CV</button></a> 
@@ -70,6 +73,72 @@
         <h1 class="text-5xl font-bold text-white text-center lg:pb-20 font-monsterrat translate-y-2.5">About me</h1>
         <h6 class="text-white lg:px-48 px-2 lg:py-4 pt-6 text-center font-monsterrat">I  craft  user-centered  websites  using  code  (HTML,  CSS,  JS)  and  design  principles  (UI / UX). I'm  passionate  about  solving  problems </h6> <h6 class="text-white lg:px-48 px-2 pb-10 text-center font-monsterrat" >and  building  beautiful ,  intuitive  experiences.  Let's  connect!
         </h6>
+        <!-- about me cards -->
+        <div class="lg:flex py-12  ">
+          <div>
+            <!-- card-1 (about me)-->
+            <div class="">
+              <div class="card bg-base-100 w-80 h-96 shadow-xl m-5 sm:ml-20">
+                <figure class="px-10 pt-10">
+                  <i class="fa-solid fa-code text-5xl  text-indigo-900"></i>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-monsterrat text-xl text-indigo-900 font-bold">WEB DEVELOPMENT</h2>
+                  <p class="font-monsterrat  text-indigo-900 font-medium p-3">I craft visually captivating & user-friendly UIs using modern design principles & development techniques.</p>
+                  <div class="card-actions">
+                    <button class="btn  bg-indigo-900 text-white font-monsterrat ">Read More</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+           <!-- card-2 (about me) -->
+           <div class="sm: pl-10 lg:pl-0 md:pl-48">
+           <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
+            <figure class="px-10 pt-10">
+              <i class="fa-solid fa-pen-fancy text-5xl  text-indigo-900"></i>
+            </figure>
+            <div class="card-body items-center text-center">333333
+              <h2 class="card-title font-monsterrat text-xl text-indigo-900 font-bold">UI/UX DESIGN</h2>
+              <p class="font-monsterrat  text-indigo-900 font-medium py-3 pb-0 m-0">I design like a pro using these industry-leading design tools.</p>
+              <div class="card-actions">
+                <button class="btn  bg-indigo-900 text-white font-monsterrat m-0">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- card-3 (about me) -->
+          <div class="sm: pl-10 lg:pl-0 md:pl-48">
+          <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
+            <figure class="px-10 pt-10">
+              <i class="fa-regular fa-lightbulb text-5xl  text-indigo-900"></i>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title card-title font-monsterrat text-xl text-indigo-900 font-bold">PROBLEM SOLVER</h2>
+              <p class="font-monsterrat  text-indigo-900 font-medium py-3 pb-0 m-0">I approach projects with a problem-solving mindset, ensuring optimal solutions.</p>
+              <div class="card-actions">
+                <button class="btn  bg-indigo-900 text-white font-monsterrat m-0">Read More</button>
+              </div>
+            </div>
+          </div>
+         </div>
+
+<!-- card-4 (about me) -->
+         <div class="sm: pl-10 lg:pl-0 md:pl-48">
+          <div class="card bg-base-100 w-80 shadow-xl m-5 h-96">
+            <figure class="px-10 pt-10">
+              <i class="fa-regular fa-lightbulb text-5xl  text-indigo-900"></i>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title card-title font-monsterrat text-xl text-indigo-900 font-bold">PROBLEM SOLVER</h2>
+              <p class="font-monsterrat  text-indigo-900 font-medium py-3 pb-0 m-0">I approach projects with a problem-solving mindset, ensuring optimal solutions.</p>
+              <div class="card-actions">
+                <button class="btn  bg-indigo-900 text-white font-monsterrat m-0">Read More</button>
+              </div>
+            </div>
+          </div>
+         </div>
+
 
     </section>
     <!-- services -->
@@ -150,12 +219,12 @@
             <textarea class=" p-2 w-9/12 rounded-3xl" id="message" name="message" rows="4" placeholder="Message" required></textarea><br>
           </div>
         <div class="w-11/12 flex justify-end">
-          <button class="bg-white text-indigo-900 font-bold px-6 py-3 rounded-md m-12" type="submit" value="Submit">Submit</button>
+          <button class="btn bg-white text-indigo-900 font-bold px-6 py-3 rounded-md m-12" type="submit" value="Submit">Submit</button>
         </div>
           
           
       </form>
     </section>
-
+<script src="script/portfolio.js"></script>
 </body>
 </html>
